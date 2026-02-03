@@ -2,7 +2,7 @@ package ru.yandex.practicum.delivery;
 
 public class PerishableParcel extends Parcel {
     private static final int BASE_COST = 3;
-    private int timeToLive;
+    private final int timeToLive;
 
     public PerishableParcel(int weight, int sendDay, String description, String deliveryAddress, int timeToLive) {
         super(weight, sendDay, description, deliveryAddress);

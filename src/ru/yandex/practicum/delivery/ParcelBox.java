@@ -14,16 +14,8 @@ public class ParcelBox<T extends Parcel> {
         this.currentWeight = 0;
     }
 
-    public int getMaxWeight() {
-        return maxWeight;
-    }
-
     public int getCurrentWeight() {
         return currentWeight;
-    }
-
-    public List<T> getParcels() {
-        return parcels;
     }
 
     public void addParcel(T parcel) {
