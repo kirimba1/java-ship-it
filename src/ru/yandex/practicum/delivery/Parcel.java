@@ -39,10 +39,10 @@ public abstract class Parcel {
     }
 
     public int calculateDeliveryCost() {
-        return getWeight() * getConstant();
+        return getWeight() * getDeliveryCost();
     }
 
-    protected abstract int getConstant();
+    protected abstract int getDeliveryCost();
 
     public boolean isAvailableForSend(int currentDay) {
         return true;

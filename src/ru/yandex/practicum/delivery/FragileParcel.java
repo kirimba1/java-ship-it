@@ -14,7 +14,7 @@ public class FragileParcel extends Parcel implements Trackable {
     }
 
     @Override
-    protected int getConstant() {
+    protected int getDeliveryCost() {
         return BASE_COST;
     }
 
